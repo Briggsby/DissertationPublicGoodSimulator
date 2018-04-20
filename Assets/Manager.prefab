@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1855114247101268}
+  m_IsPrefabParent: 1
+--- !u!1 &1855114247101268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4984853621087598}
+  - component: {fileID: 114583063217047326}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4984853621087598
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855114247101268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114583063217047326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855114247101268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5074548c249e5f459d21cd6d6844cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardSize: 20
+  unitPrefab: {fileID: 1676619552688696, guid: 453c9e1e596008e4b94e46a3f33ff199, type: 2}
+  unitSize: 1
+  cameraSpeed: 5
+  cameraScrollSpeed: 5
+  rgbRange:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  editorModeToggle: {fileID: 0}
+  editorMode: 0
+  cellFitness: 0
+  timeStepPerSecond: 20
+  paused: 1
+  timePassed: 0
+  cellID: 0
+  doDiffusion: 0
+  diffusionTimeStep: 1
+  diffusionConst: 0.3
+  diffusionCutOff: 1
+  cellPrefab: {fileID: 1453677594076336, guid: a90c65f1ee6d86b44817c3f1b852c9aa, type: 2}
+  fitnessTimeStep: 1
+  costToLive: -0.1
+  costToLivePerRep: 0
+  fitnessDeathThreshold: 0
+  fitnessRepThreshold: 1
+  rangeOfUptake: 0
+  rgbFitnessPerUnit:
+  - 0
+  - 0
+  - 0
+  rgbUptakePerStep: 000000000000000000000000000000000000000000000000
+  costOfCompetition: 0
+  bothSidesCompetingCost: 0
+  mutationRate: 0.02
+  doDirectFitness: 1
+  directFitnessTimer: 5
+  directFitnessRange: 1
+  directFitnessBenefit: 0.35
+  directFitnessCost: 0.05
+  directFitnessExploitability: 1
+  doColorSecretion: 0
+  colorSecretionTimer: 3
+  colorSecreted: 1
+  amountColorSecreted: 100
+  colorSecretionCost: 0
+  doColorMetabolism: 0
+  colorMetabolismTimer: 1
+  colorUptake: 000000000000000000000000000000000000000000000000
+  fitnessPerUnitColor:
+  - 0
+  - 0
+  - 0
+  colorUptakeMultExploiters:
+  - 1
+  - 1
+  - 1
+  colorFitnessMultExploiters:
+  - 1
+  - 1
+  - 1
+  doCounting: 0
+  countingTimer: 20
+  countingTimestepCounter: 0
+  cellCount: 0
+  producerCount: 0
+  colorDivide: 1000
+  producerColor: {r: 0.997, g: 0.49019608, b: 0.5019608, a: 1}
+  exploiterColor: {r: 0.503, g: 0.147, b: 0, a: 1}
+  red: 0
+  green: 1
+  blue: 2
